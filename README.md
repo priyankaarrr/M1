@@ -111,10 +111,19 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
+```
+#include <stdio.h>
 
+int main() { int value;
+
+printf("Enter a value: "); scanf("%d", &value); if (value == 1) { printf("The value is equal to 1.\n"); }
+
+return 0; }
+```
 ## OUTPUT:
 
 
+![image](https://github.com/user-attachments/assets/7568bf3a-c805-4e04-b228-d7796b1862d5)
 
 
 
@@ -147,8 +156,41 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+#include <stdio.h>
+
+int main() { int mark1, mark2, mark3, total; float percentage;
+printf("Enter marks for Subject 1: ");
+scanf("%d", &mark1);
+
+printf("Enter marks for Subject 2: ");
+scanf("%d", &mark2);
+
+printf("Enter marks for Subject 3: ");
+scanf("%d", &mark3);
+
+if (mark1 < 33 || mark2 < 33 || mark3 < 33) {
+    printf("Fail (One or more subjects below minimum marks)\n");
+    return 0;
+}
+
+
+total = mark1 + mark2 + mark3;
+percentage = (float)total / 3;
+printf("Total Marks = %d\n", total);
+printf("Percentage = %.2f%%\n", percentage);
+if (percentage >= 40.0) {
+    printf("Pass\n");
+} else {
+    printf("Fail (Percentage below pass mark)\n");
+}
+
+return 0;
+
+
+
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/71df58da-1088-4d5e-a212-901a2d3d6577)
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
