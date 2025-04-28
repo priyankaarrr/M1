@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/be39fdd2-40bd-4dc9-a235-b637d2037fdf)![image](https://github.com/user-attachments/assets/709c6184-6656-43a8-a93f-bcea7ec3ccac)
 # EX-01-Datatypes-Operators
 ## AIM:
 Write a C program to read 3 characters one by one and print the characters in a reverse order.
@@ -10,24 +10,28 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
+```
+#include <stdio.h>
+
+int main() { char ch1, ch2, ch3;
+printf("Enter first character: ");
+scanf(" %c", &ch1); 
+printf("Enter second character: ");
+scanf(" %c", &ch2);
+
+printf("Enter third character: ");
+scanf(" %c", &ch3);
+
+printf("Characters in reverse order: %c %c %c\n", ch3, ch2, ch1);
+
+return 0;
+}
+```
 
 ## OUTPUT:
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/79b213f4-fdb4-4ad5-be9b-10c17e661849)
 
 ## RESULT:
 Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
@@ -46,17 +50,29 @@ Write a C program to read A values and check whether A is positive number or not
 6.End the program.
 
 # PROGRAM:
+```
+#include <stdio.h>
+
+int main() { int A;
+
+
+printf("Enter a value for A: ");
+scanf("%d", &A);
+
+
+if (A > 0) {
+    printf("A is a positive number.\n");
+} else {
+    printf("A is not a positive number.\n");
+}
+
+return 0;
+}
+```
 
 # OUTPUT:
 
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/cbae3986-5e9d-436a-92fb-4b6330381e6f)
 
 
 # RESULT:
@@ -80,16 +96,25 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
+```
+#include <stdio.h>
 
+int main() { float num1, num2, min;
+printf("Enter first number: ");
+scanf("%f", &num1);
+
+printf("Enter second number: ");
+scanf("%f", &num2);
+
+min = (num1 < num2) ? num1 : num2;
+
+printf("Minimum number is: %.2f\n", min);
+
+return 0;
+}
+```
 ## OUTPUT:
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/b3946d40-79ab-432f-9753-dd74f267ed1b)
 
 ## RESULT:
 Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
@@ -122,15 +147,7 @@ return 0; }
 ```
 ## OUTPUT:
 
-
 ![image](https://github.com/user-attachments/assets/7568bf3a-c805-4e04-b228-d7796b1862d5)
-
-
-
-
-
-
-
 	
 
 ## RESULT:
@@ -156,6 +173,7 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+```
 #include <stdio.h>
 
 int main() { int mark1, mark2, mark3, total; float percentage;
@@ -185,7 +203,7 @@ if (percentage >= 40.0) {
 }
 
 return 0;
-
+```
 
 
 
